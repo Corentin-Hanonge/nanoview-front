@@ -190,9 +190,9 @@ onMount(() => {
       let nodematerial = new THREE.MeshPhongMaterial( { color: 0x4A90E2, opacity: 0.95, emissive: 0x000024, transparent: true, emissive: 0x4A90E2, emissiveIntensity:1 } );
       let nodegeometry = new THREE.SphereBufferGeometry( 0.15, 10, 10 );
 
+	let backAPI = "https://backend-nanonetmon.herokuapp.com/nano-nodes"
 
-
-      fetch('http://localhost:3000/nano-nodes', {
+      fetch(backAPI, {
         method: 'GET'
       })
       .then((response) => { return response.json() })
@@ -422,7 +422,7 @@ function setup(){
 
 let proxyRPC = 'https://coco-node.fr:443/proxy'
 //let proxyRPC = "https://mynano.ninja/api/node"
-
+//let proxyRPC = 'https://backend-nanonetmon.herokuapp.com/proxy'
 
 async function getRep(fetchaddress){
 
