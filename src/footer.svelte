@@ -23,26 +23,26 @@ const openNav = () => {
 
 
   <div class="downArrowDiv flex row" on:click = {openNav} >
-  	<img src="../images/icons8-double-down-100.png" style="transform:rotate({arrowAngle}deg) ;">
+  	<img src="../images/icons8-double-down-100.png" alt="arrow image" style="transform:rotate({arrowAngle}deg) ;">
   </div>
 
   <div class="row flex footerContainer" style="margin-bottom:{footerItems}rem">
 
     <div>
-    	<a href="https://nano.org/"><h2 class="item hover-underline-animation">Making use of nano's open, near-instant and feeless network</h2></a>
+    	<a href="https://nano.org/"><h2 class="sentence item hover-underline-animation">Making use of nano's open, near-instant and feeless network</h2></a>
     </div>
 
     <div class="footerMenuContainer flex row">
 
     	<a href="https://twitter.com/C_Hanonge">
     	<div class="item twitter flex row">
-    			<img src="../images/icons8-twitter.svg">
+    			<img alt="twitter logo  image" src="../images/icons8-twitter.svg">
     	</div>
     	</a>
 
     	<a href="https://xno.to/nano_3pgjeh64eyg77k8cc5h4cem16p94s4u3q63e9aywpg6gjpyxaed1ou41dccn">
     	<div class="item heart flex row spin">
-    			<img src="../images/heart.svg">
+    			<img src="../images/heart.svg" alt="heart image">
     			<span>tip nano</span>
     	</div>
     	</a>
@@ -58,7 +58,7 @@ const openNav = () => {
 
 
 h2{
-  font-weight: normal;
+	font-weight: normal;
 
 }
 .downArrowDiv{
@@ -171,7 +171,6 @@ footer{
 }
 
 /* ------------------------- */
-
 footer{
   height: 0; /* 100% Full-height */
   width: 100%; /* 0 width - change this with JavaScript */
@@ -206,8 +205,17 @@ footer{
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+}
+
+
+@media (max-width: 800px) {
+  h2 {
+  font-size: 1em;
+  }
+ .footerContainer{
+	  width:100%;
+ 
+ }
 }
 
 

@@ -190,7 +190,7 @@ onMount(() => {
       let nodematerial = new THREE.MeshPhongMaterial( { color: 0x4A90E2, opacity: 0.95, emissive: 0x000024, transparent: true, emissive: 0x4A90E2, emissiveIntensity:1 } );
       let nodegeometry = new THREE.SphereBufferGeometry( 0.15, 10, 10 );
 
-	let backAPI = "https://backend-nanonetmon.herokuapp.com/nano-nodes"
+	let backAPI = "https://lime-nutty-catfish.cyclic.app/nano-nodes"
 
       fetch(backAPI, {
         method: 'GET'
@@ -489,9 +489,5 @@ canvas{
   width:100%;
 }
 
-button{
-  margin-top: -30px;
-  z-index: 3;
-}
 
 </style>

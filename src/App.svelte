@@ -69,15 +69,7 @@
 		font-size: 1em;
 		font-weight: 100;
 	}
-	h2{
-		color: #EEF0F2;
-		font-weight: 100;
-		z-index: 3;
-	}
-	h3{
-		font-weight: lighter;
-	}
-
+	
 
 	.mainGrid{
 		width: 100%;
@@ -110,4 +102,5 @@
 			grid-template-columns: 1fr;
 		}
 	}
+	
 </style>
